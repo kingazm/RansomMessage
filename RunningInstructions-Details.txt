@@ -65,7 +65,7 @@ Those test cases where one or both of the input files are empty. An empty messag
 
 The way I tested my program was after compiling it as above, I sent the output of my program to the myoutput<x>.txt or myoutput_empty<x>.txt, depending on the tested case, and, using another command, compared with fc command (file compare) this output file to output<x>.txt or output_empty<x>.txt respectively.
 
-So the to run in the directory of the program on message1.txt and magazine1.txt:
+So to run in the directory of the program on message1.txt and magazine1.txt:
 javac Main.java
 java Main tests/message1.txt tests/magazine1.txt
 
