@@ -47,22 +47,22 @@ The program output will be sent directly to the console output.
 # MY TESTS AND EDGE/PATHOLOGICAL CASES
 I tested the code against my prepared test cases, including some more tricky ones.
 Those tests can be found in the "tests" folder. Each test consists of 3 files:
-message<x>.txt
-magazine<x>.txt
-output<x>.txt
+message(x).txt
+magazine(x).txt
+output(x).txt
 
-Where message<x>.txt and magazine<x>.txt are the input files and output<x>.txt contains the predicted program output (true/false). x is the number of the test.
+Where message(x).txt and magazine(x).txt are the input files and output(x).txt contains the predicted program output (true/false). x is the number of the test.
 
 Regarding edge cases, I included three tests that contain empty files:
-message_empty<x>.txt
-magazine_empty<x>.txt
-output_empty<x>.txt
+message_empty(x).txt
+magazine_empty(x).txt
+output_empty(x).txt
 
 Tests for more than one magazine file are in their own folders in the tests folder.
 
-Those test cases where one or both of the input files are empty. An empty message string can be created from anything, so I assumed that for cases where message_empty<x>.txt is empty, the answer is true. In a case where message_empty<x>.txt is not empty and the magazine_empty<x>.txt is empty, the answer is false, as there is no way to create a non-empty message when there are no letters to work with.
+Those test cases where one or both of the input files are empty. An empty message string can be created from anything, so I assumed that for cases where message_empty(x).txt is empty, the answer is true. In a case where message_empty(x).txt is not empty and the magazine_empty(x).txt is empty, the answer is false, as there is no way to create a non-empty message when there are no letters to work with.
 
-The way I tested my program was after compiling it as above, I sent the output of my program to the myoutput<x>.txt or myoutput_empty<x>.txt, depending on the tested case, and, using another command, compared with fc command (file compare) this output file to output<x>.txt or output_empty<x>.txt respectively.
+The way I tested my program was after compiling it as above, I sent the output of my program to the myoutput(x).txt or myoutput_empty(x).txt, depending on the tested case, and, using another command, compared with fc command (file compare) this output file to output(x).txt or output_empty(x).txt respectively.
 
 So the to run in the directory of the program on message1.txt and magazine1.txt: <br>
 ```javac Main.java``` <br>
