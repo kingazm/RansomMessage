@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static HashMap<Character, Integer> countTheCharacters(String text) {
+    public static HashMap<Character, Integer> countTheCharacters(String text) { //counts frequencies of each character in a string
         HashMap<Character, Integer> textCharCount = new HashMap<Character, Integer>(); //Every character will be counted in the hashmap - the information is stored with character as a key and the number of its appereances as value
         int textLength = text.length();
 
@@ -27,7 +27,7 @@ public class Main {
         return textCharCount;
     }
 
-    //main function that decides whether the message from the messageFile is buildable from the magazineFile(s) given as next arguments
+    //main function that determines whether the message from the messageFile is buildable from the magazineFile(s) given as next arguments
     //the arguments are the names of the files, i.e. "message.txt"
     public static boolean canCreateMessage(String messageFile, String...magazineFile) throws FileNotFoundException { //if files of given names where not found, the error is thrown
 
